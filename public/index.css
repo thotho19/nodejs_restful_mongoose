@@ -1,0 +1,72 @@
+.get{
+    width: 300px; 
+    position: absolute;
+    background: green;
+    margin-left: 5px;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .post{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    margin-left: 5px;
+    left: 305px;
+    background: red;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .post input{
+      margin: 10px;
+      height: 40px;
+      font-size: 100%;
+  }
+  .post button{
+      margin: 10px;
+      height: 40px;
+      font-size: 100%;
+  }
+  .delete{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    margin-left: 5px;
+    left: 610px;
+    background: blueviolet;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .delete input{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
+.delete button{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
+  .edit{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    margin-left: 5px;
+    left: 915px;
+    background: pink;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .edit input{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
+.edit button{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
