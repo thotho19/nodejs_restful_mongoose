@@ -51,19 +51,33 @@ app.delete('/' , (req , res)=>{
         }
     });
 });
+var temp;
 app.put('/' , (req , res)=>{
     var id = req.body.id;
         var title= req.body.title;
         var firstName= req.body.firstName;
         var lastName= req.body.lastName;
-    User.findByIdAndUpdate(id , {'title': title , 'firstName': firstName , 'lastName': lastName} , (err , updated)=>{
-        if(err){
-            console.log(err);
-            res.redirect('/');
-        }else{
-            res.redirect('/');
-        }  
-    });
+        
+    if(id){
+        temp = id;
+        User.findOne({'_id': id} , (err , ok)=>{
+            if(err){
+                console.log(err);
+            }else{
+                res.render('index2.ejs' , {oks: ok});
+            }
+        })
+    }else{
+        console.log(temp);
+        User.findByIdAndUpdate(temp , {'title': title , 'firstName': firstName , 'lastName': lastName} , (err , updated)=>{
+                if(err){
+                    console.log(err);
+                    res.redirect('/');
+                }else{
+                    res.redirect('/');
+                }  
+            });
+    }
 })
 
 app.listen(3000 , ()=>{

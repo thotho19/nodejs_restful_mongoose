@@ -70,3 +70,24 @@
     height: 40px;
     font-size: 100%;
 }
+  .edit2{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    margin-left: 5px;
+    left: 1220px;
+    background: gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .edit2 input{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
+.edit2 button{
+    margin: 10px;
+    height: 40px;
+    font-size: 100%;
+}
