@@ -7,24 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
-  
-    <form class="post" action="/" method="POST">
-        <input type="text" name="title" placeholder="title" required autocomplete="off">
-        <input type="text" name="firstName" placeholder="firstName" required autocomplete="off">
-        <input type="text" name="lastName" placeholder="lastName" required autocomplete="off">
-        <button type="submit">Insert</button>
-    </form>
-    
-    <form class="delete" action="/?_method=DELETE" method="POST">
-        <input type="text" name="id" placeholder="Enter id" autocomplete="off">
-        <button type="text">Delete</button>
-    </form>
-
-    <form class="edit" action="/?_method=PUT" method="POST">
-        <input type="text" name="id" placeholder="Enter id">
-        <button type="submit">FindOne</button>
-    </form>
     <form class="edit2" action="/?_method=PUT" method="POST">
         <input type="text" name="title" value="<%= oks.title %>" placeholder="title" required autocomplete="off" >
         <input type="text" name="firstName" value="<%= oks.firstName %>" placeholder="firstName" required autocomplete="off">
